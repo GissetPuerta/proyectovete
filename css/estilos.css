@@ -69,7 +69,7 @@ body{
     padding-left: 5%;
 
     transform: var(--state-menu);
-    transform: .3s transform;
+    transition: .3s transform;
 }
 
 .nav_item{
