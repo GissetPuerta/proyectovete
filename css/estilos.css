@@ -12,7 +12,7 @@ body{
 .nav{
     --state-close: scale(0);
     --state-hamburguer: scale(1);
-    --state-menu: translate(-100%)
+    --state-menu: translate(-100%);
 
     padding: 40px 0;
     display: grid;
