@@ -54,6 +54,10 @@ body{
     transform: var(--state-close);
 }
 
+.nav_icon{
+    width: 40px;
+}
+
 .nav_links{
     background-color: #000;
     position: absolute;
@@ -79,7 +83,7 @@ body{
 .nav_link{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 @media (min-width:768px){
