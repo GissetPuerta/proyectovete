@@ -38,6 +38,7 @@ body{
 .nav_logo{
     width: 220px;
     margin: 10px;
+    z-index:1;
 }
 .nav_hamburguer, .nav_close{
     cursor: pointer;
@@ -67,8 +68,8 @@ body{
     gap: 2em;
     padding-left: 5%;
 
-    transition: var(--state-menu);
-    transition: .3s transform;
+    transform: var(--state-menu);
+    transform: .3s transform;
 }
 
 .nav_item{
