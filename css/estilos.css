@@ -28,14 +28,6 @@ body{
     --state-menu: translate(0);
 }
 
-#imgLogo{
-    width: 220px;
-    margin: 10px;
-    float: right;
-    padding-bottom: 5px;
-    border-radius: 20px;
-}
-
 .nav_logo{
     width: 220px;
     margin: 10px;
