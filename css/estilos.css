@@ -10,6 +10,13 @@ body{
     overflow: hidden;
 }
 
+.contenidoServicio > .articleServicios{
+    background-color: #2898ee;
+}
+.contenidoServicio{
+    border-color: none;
+}
+
 .containerServicio{
     background-color: white;
     width: 90%;
@@ -28,7 +35,13 @@ body{
 .containerServicio > div{
     background-color: #fff;
     padding: 20px;
-    border: 1px solid #000;
+    border: 1px solid;
+    border-color: none;
+    border-radius: 20px;
+}
+
+.imgcabezaperros{
+    border-radius: 20px;
 }
 
 .containerServicio > .header,
@@ -41,7 +54,8 @@ body{
 }
 
 .contenidoServicio > .articleServicios {
-    background: #808e9b;
+    border-radius: 20px;
+    background: #2898ee;
     padding: 20px;
     margin-top: 5px;
     color: #dfe6e9;
@@ -55,7 +69,7 @@ body{
 
 .containerServicio > .sidebarServicio {
     grid-column: span 2;
-    background: #485460;
+    background: #fa58ac;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -138,6 +152,11 @@ body{
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
+
+.footer{
+    background-color: #000;
+
+}
 @media (min-width:768px){
     .nav{
         --state-hamburguer: scale(0);
@@ -179,5 +198,11 @@ body{
     .containerServicio .sidebarServicio{
         grid-column: 1/-1;
         
+    }
+
+    .imgcabezaperros{
+        width: 400px;
+        height: 300px;
+        border-radius: 20px;
     }
 }
