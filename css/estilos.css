@@ -11,7 +11,7 @@ body{
 }
 
 .containerServicio{
-    background-color: white;
+    background-color: whitesmoke;
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -25,26 +25,37 @@ body{
 .containerServicio > .contenidoServicio,
 .containerServicio > .sidebarServicio,
 .containerServicio > .footer,
-.containerServicio > div{
-    background-color: #fff;
+.containerServicio > div {
     padding: 20px;
-    border: 1px solid #000;
+    border: 0px solid;
+    border-color: none;
+    border-radius: 20px;
+}
+
+.imgcabezaperros{
+    border-radius: 20px;
 }
 
 .containerServicio > .header,
 .containerServicio > .footer {
     grid-column: 1/6;
+    background: rgb(151, 148, 148);
+    border-color: none;
 }
 
 .containerServicio > .contenidoServicio { 
     grid-column: span 3;
+    background: #83c9ff;
+    
 }
 
 .contenidoServicio > .articleServicios {
-    background: #808e9b;
+    border-radius: 20px;
+    background: #2898ee;
+    grid-column: span 4;
     padding: 20px;
-    margin-top: 5px;
-    color: #dfe6e9;
+    margin-top: 20px;
+    color: #ffffff;
 }
 
 .contenidoServicio  .articleServicios h1,
@@ -52,10 +63,9 @@ body{
     padding: 10px;
 }
 
-
 .containerServicio > .sidebarServicio {
     grid-column: span 2;
-    background: #485460;
+    background: #fa58ac;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -111,7 +121,7 @@ body{
 }
 
 .nav_links{
-    background-color: rgb(18, 214, 116);
+    background-color: #83c9ff;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -138,6 +148,7 @@ body{
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
+
 @media (min-width:768px){
     .nav{
         --state-hamburguer: scale(0);
@@ -179,5 +190,11 @@ body{
     .containerServicio .sidebarServicio{
         grid-column: 1/-1;
         
+    }
+
+    .imgcabezaperros{
+        width: 330px;
+        height: 278px;
+        border-radius: 20px;
     }
 }
