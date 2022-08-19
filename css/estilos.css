@@ -1,16 +1,15 @@
-
-body{
+body {
     font-family: 'DynaPuff', cursive;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
 }
 
-.containerServicio{
+.containerServicio {
     background-color: whitesmoke;
     width: 90%;
     max-width: 1000px;
@@ -21,35 +20,35 @@ body{
     grid-template-columns: repeat(5, 1fr);
 }
 
-.containerServicio > .header,
-.containerServicio > .contenidoServicio,
-.containerServicio > .sidebarServicio,
-.containerServicio > .footer,
-.containerServicio > div {
+.containerServicio>.header,
+.containerServicio>.contenidoServicio,
+.containerServicio>.sidebarServicio,
+.containerServicio>.footer,
+.containerServicio>div {
     padding: 20px;
     border: 0px solid;
     border-color: none;
     border-radius: 20px;
 }
 
-.imgcabezaperros{
+.imgcabezaperros {
     border-radius: 20px;
 }
 
-.containerServicio > .header,
-.containerServicio > .footer {
+.containerServicio>.header,
+.containerServicio>.footer {
     grid-column: 1/6;
     background: rgb(151, 148, 148);
     border-color: none;
 }
 
-.containerServicio > .contenidoServicio { 
+.containerServicio>.contenidoServicio {
     grid-column: span 3;
     background: #83c9ff;
-    
+
 }
 
-.contenidoServicio > .articleServicios {
+.contenidoServicio>.articleServicios {
     border-radius: 20px;
     background: #2898ee;
     grid-column: span 4;
@@ -58,12 +57,12 @@ body{
     color: #ffffff;
 }
 
-.contenidoServicio  .articleServicios h1,
-.contenidoServicio  .articleServicios p { 
+.contenidoServicio .articleServicios h1,
+.contenidoServicio .articleServicios p {
     padding: 10px;
 }
 
-.containerServicio > .sidebarServicio {
+.containerServicio>.sidebarServicio {
     grid-column: span 2;
     background: #fa58ac;
     color: #fff;
@@ -73,13 +72,13 @@ body{
     flex-direction: column;
 }
 
-.containerServicio .sidebarServicio img{
+.containerServicio .sidebarServicio img {
     width: 100%;
     margin-top: 5px;
     border-radius: 20px;
 }
 
-.nav{
+.nav {
     --state-close: scale(0);
     --state-hamburguer: scale(1);
     --state-menu: translate(-100%);
@@ -91,36 +90,38 @@ body{
     grid-template-columns: repeat(2, max-content);
 }
 
-.nav:target{
+.nav:target {
     --state-close: scale(1);
     --state-hamburguer: scale(0);
     --state-menu: translate(0);
 }
 
-.nav_logo{
+.nav_logo {
     width: 220px;
     margin: 10px;
-    z-index:1;
+    z-index: 1;
 }
-.nav_hamburguer, .nav_close{
+
+.nav_hamburguer, .nav_close {
     cursor: pointer;
     grid-column: -2/-1;
     grid-row: 1/2;
     transition: .4s transform;
 }
 
-.nav_hamburguer{
+.nav_hamburguer {
     transform: var(--state-hamburguer);
 }
-.nav_close{
+
+.nav_close {
     transform: var(--state-close);
 }
 
-.nav_icon{
+.nav_icon {
     width: 40px;
 }
 
-.nav_links{
+.nav_links {
     background-color: #83c9ff;
     position: absolute;
     top: 0;
@@ -138,28 +139,75 @@ body{
     transition: .3s transform;
 }
 
-.nav_item{
+.nav_item {
     list-style: none;
 }
 
-.nav_link{
+.nav_link {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
 
-@media (min-width:768px){
-    .nav{
+.footer {
+    width: 100%;
+    background: rgb(151, 148, 148);
+}
+
+.footer .grupo-1 {
+    width: 100%;
+    max-height: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+
+.footer .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img {
+    width: 250px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+.footer .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.footer .grupo-2 {
+    background-color: rgb(168, 165, 165);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width:768px) {
+    .nav {
         --state-hamburguer: scale(0);
         --state-menu: translate(0);
     }
-    
-    .nav:target{
+
+    .nav:target {
         --state-close: scale(0);
     }
 
-    .nav_links{
+    .nav_links {
         padding: 0;
         background-color: unset;
         position: unset;
@@ -172,29 +220,46 @@ body{
         grid-row: 1/2;
     }
 
-    .nav_link{
+    .nav_link {
         font-size: 1rem;
         letter-spacing: none;
         color: black;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .header{
+    .header {
         text-align: center;
     }
 
-    .containerServicio .contenidoServicio{
+    .containerServicio .contenidoServicio {
         grid-column: 1/-1;
 
     }
-    .containerServicio .sidebarServicio{
+
+    .containerServicio .sidebarServicio {
         grid-column: 1/-1;
-        
+
     }
 
-    .imgcabezaperros{
+    .imgcabezaperros {
         width: 330px;
         height: 278px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 30px 0px;
+    }
+
+    .footer .grupo-1 .box figure img {
+        width: 200px;
+        height: 200px;
         border-radius: 20px;
     }
 }
