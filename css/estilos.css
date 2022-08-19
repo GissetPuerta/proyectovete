@@ -198,3 +198,27 @@ body{
         border-radius: 20px;
     }
 }
+
+
+
+
+
+.slider-container {
+    display: flex;
+    width: 60%;
+    height: 70vh;
+    overflow-x: scroll
+    scroll-snap-typex mandatory;
+}
+
+.slider-container img {
+    flex: 0 0 90%;
+    width: 90%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.slider-container.contenido{
+    padding: 15px;
+    text-align: center;
+}
