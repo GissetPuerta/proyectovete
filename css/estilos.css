@@ -151,7 +151,7 @@ body {
 }
 
 .footer {
-    width: 100%;
+    width: 96%;
     background: rgb(151, 148, 148);
 }
 
@@ -177,6 +177,7 @@ body {
     width: 250px;
     height: 230px;
     border-radius: 20px;
+    justify-items:  right;
 }
 
 .footer .grupo-1 .box h2 {
@@ -251,7 +252,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .footer .grupo-1 {
-        width: 90%;
+        width: 85%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 30px 0px;
