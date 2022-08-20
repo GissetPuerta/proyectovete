@@ -1,13 +1,5 @@
 body {
-    background-color: lightgrey;
-    font-family: sans-serif;
-}
-
-.container {
-    margin: auto;
-    background-color: white;
-    width: 800px;
-    padding: 30px;
+    font-family: 'DynaPuff', cursive;
 }
 
 ul,
@@ -69,9 +61,6 @@ ul.slider li:target {
     font-size: 20px;
     border-radius: 100%;
 }
-
-
-
 
 body {
     font-family: 'DynaPuff', cursive;
