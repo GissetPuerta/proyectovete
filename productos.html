@@ -14,77 +14,90 @@
 
 <body>
 
-    <nav class="nav container" id="nav">
-        <h1 class="nav_logo">Happines</h1>
-
-        <ul class="nav_links">
-            <li class="nav_item">
-                <a href="index.html" class="nav_link">Inicio</a>
-            </li>
-            <li class="nav_item">
-                <a href="servicios.html" class="nav_link">Servicios</a>
-            </li>
-            <li class="nav_item">
-                <a href="productos.html" class="nav_link">Productos</a>
-            </li>
-            <li class="nav_item">
-                <a href="medicamento.html" class="nav_link">Medicamentos</a>
-            </li>
-            <li class="nav_item">
-                <a href="contactenos.html" class="nav_link">Contáctenos</a>
-            </li>
-        </ul>
-
-        <a href="#nav" class="nav_hamburguer">
-            <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg"
-                class="nav_icon">
-        </a>
-
-        <a href="#nav" class="nav_close">
-            <img src="img/close_FILL0_wght400_GRAD0_opsz48.svg"
-                class="nav_icon">
-        </a>
-    </nav>
-
-   <center><h3>PRODUCTOS PARA TU MASCOTA</h3></center> 
-
-
-    <div class="container">
-
-        <ul class="slider">
-            <li id="slide1">
-                <img src="./img/producto1.png" />
-            </li>
-            <li id="slide2">
-                <img src="./img/producto2.jpg" />
-            </li>
-
-            <li id="slide3">
-                <img src="./img/producto3.png" />
-            </li>
-
-
-        <li id="slide4">
-            <img src="./img/producto5.png" />
-        </li>
-    </ul>
-
-        <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-            <li>
-                <a href="#slide4">4</a>
-            </li>
-        </ul>
-
+    <div id="carrusel">
+        <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+        <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+        <div class="carrusel">
+            <div class="product" id="product_0">
+                <img src="/img/producto1.png" width="195" height="100" />
+                <h5>Camitas</h5>
+                <p>82,000</p>
+            </div>
+            <div class="product" id="product_1">
+                <img src="/img/producto2.jpg" width="195" height="100" />
+                <h5>Juguetes</h5>
+                <p>38,700</p>
+            </div>
+            <div class="product" id="product_2">
+                <img src="/img/producto3.png" width="195" height="100" />
+                <h5>Gimnasios</h5>
+                <p>90,000</p>
+            </div>
+            <div class="product" id="product_3">
+                <img src="/img/producto4.png" width="195" height="100" />
+                <h5>Accesorios</h5>
+                <p>30,000</p>
+            </div>
+            <div class="product" id="product_4">
+                <img src="img/producto5.png" width="195" height="100" />
+                <h5>Cepillos</h5>
+                <p>65.00</p>
+            </div>
+            <div class="product" id="product_5">
+                <img src="img/producto6.png" width="195" height="100" />
+                <h5>Aseo para tu mascota</h5>
+                <p>40.00</p>
+            </div>
+        </div>
     </div>
+    <script>
+        var current = 0;
+        var imagenes = new Array();
+        
+        $(document).ready(function() {
+            var numImages = 6;
+            if (numImages <= 3) {
+                $('.right-arrow').css('display', 'none');
+                $('.left-arrow').css('display', 'none');
+            }
+        
+            $('.left-arrow').on('click',function() {
+                if (current > 0) {
+                    current = current - 1;
+                } else {
+                    current = numImages - 3;
+                }
+        
+                $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+                return false;
+            });
+        
+            $('.left-arrow').on('hover', function() {
+                $(this).css('opacity','0.5');
+            }, function() {
+                $(this).css('opacity','1');
+            });
+        
+            $('.right-arrow').on('hover', function() {
+                $(this).css('opacity','0.5');
+            }, function() {
+                $(this).css('opacity','1');
+            });
+        
+            $('.right-arrow').on('click', function() {
+                if (numImages > current + 3) {
+                    current = current+1;
+                } else {
+                    current = 0;
+                }
+        
+                $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+        
+                return false;
+            }); 
+        });
+        </script>
 
 </body>
 
