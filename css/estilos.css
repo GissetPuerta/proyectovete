@@ -215,6 +215,65 @@ body {
     letter-spacing: 2px;
 }
 
+#ContenedorGenMed{
+    position:center;
+    color: #83c9ff;
+}
+
+#carrusel {
+    float:left;
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+ 
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+ 
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+
+.carrusel img {
+    cursor:pointer;
+}
+
+.product {
+    border:#CCCCCC 1px solid;
+}
+.footer {
+    background-color: aqua;
+}
+@media (min-width:768px){
+    .nav{
+
 .contenedorContactenos{
     position: relative;
     display: flex;
@@ -371,6 +430,7 @@ h2:after{
 
 @media (min-width:768px) {
     .nav {
+>>>>>>> e90b2c7948790f1ca9c7acf73a92cd21462cc751
         --state-hamburguer: scale(0);
         --state-menu: translate(0);
     }
