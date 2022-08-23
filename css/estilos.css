@@ -268,11 +268,6 @@ body {
 .product {
     border:#CCCCCC 1px solid;
 }
-.footer {
-    background-color: aqua;
-}
-@media (min-width:768px){
-    .nav{
 
 .contenedorContactenos{
     position: relative;
