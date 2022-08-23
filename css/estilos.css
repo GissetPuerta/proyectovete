@@ -425,7 +425,6 @@ h2:after{
 
 @media (min-width:768px) {
     .nav {
->>>>>>> e90b2c7948790f1ca9c7acf73a92cd21462cc751
         --state-hamburguer: scale(0);
         --state-menu: translate(0);
     }
