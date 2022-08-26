@@ -1,3 +1,30 @@
+.itemcarrusel{
+    border: 1px solid black;
+    height: 200px;
+    position: relative;
+}
+.tarjetacarrusel{
+    background-color: aqua;
+    height: 100%;
+}
+.flechascarrusel{
+    background-color: #365b77 0.3;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteitemscarrusel{
+    border: 5px solid black;
+}
+
+
+
+
+
 body {
     font-family: 'DynaPuff', cursive;
 }
