@@ -215,9 +215,10 @@ body {
     letter-spacing: 2px;
 }
 
-#ContenedorGenMed{
+#contenedorGenMedi{
     position:center;
-    color: #83c9ff;
+    width: 300px;
+    height: 200px;
 }
 
 #carrusel {
@@ -228,6 +229,7 @@ body {
     position:center;
     margin-top:20px;
     margin-bottom:20px;
+    
 }
  
 #carrusel .left-arrow {
@@ -236,6 +238,7 @@ body {
     z-index:1;
     top:50%;
     margin-top:-9px;
+    color: #fa58ac;
 }
  
 #carrusel .right-arrow {
@@ -244,18 +247,20 @@ body {
     z-index:1;
     top:50%;
     margin-top:-9px;
+    color: #fa58ac;
 }
  
 .carrusel {
-    width:4000px;
+    width:2000px;
     left:0px;
     position:absolute;
     z-index:0;
+    position: center;
 }
  
 .carrusel>div {
     float: left;
-    height: 203px;
+    height: 200px;
     margin-right: 5px;
     width: 195px;
     text-align:center;
