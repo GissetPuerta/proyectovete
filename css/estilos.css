@@ -322,6 +322,8 @@ body {
     position:center;
     width: 1000px;
     height: 60px;
+    margin: 0px 300px;
+    background-color: #2898ee;
 
 }
 
@@ -355,11 +357,15 @@ body {
 }
 
 .carrusel {
-    width:2000px;
+    width:700px;
+    height: 300px;
     left:0px;
     position:absolute;
     z-index:0;
-    position: center;
+    margin-right: 400px;
+    margin: 0px 600px;
+
+
 }
 
 .carrusel>div {
