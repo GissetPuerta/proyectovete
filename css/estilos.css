@@ -167,10 +167,9 @@ body {
     border-radius: 20px;
 }
 
-.containerServicio>.header,
-.containerServicio>.footer {
+.containerServicio>.header{
     grid-column: 1/6;
-    background: rgb(151, 148, 148);
+    background: #f86fb6;
     border-color: none;
 }
 
@@ -182,7 +181,7 @@ body {
 
 .contenidoServicio>.articleServicios {
     border-radius: 20px;
-    background: #2898ee;
+    background: #44a1e7;
     grid-column: span 4;
     padding: 20px;
     margin-top: 20px;
@@ -196,7 +195,7 @@ body {
 
 .containerServicio>.sidebarServicio {
     grid-column: span 2;
-    background: #fa58ac;
+    background: #a8a2a5;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -297,7 +296,7 @@ body {
     margin-top:20px;
     margin-bottom:20px;
 }
- 
+
 #carrusel .left-arrow {
     position:absolute;
     left:10px;
@@ -305,7 +304,7 @@ body {
     top:50%;
     margin-top:-9px;
 }
- 
+
 #carrusel .right-arrow {
     position:absolute;
     right:10px;
@@ -313,14 +312,14 @@ body {
     top:50%;
     margin-top:-9px;
 }
- 
+
 .carrusel {
     width:4000px;
     left:0px;
     position:absolute;
     z-index:0;
 }
- 
+
 .carrusel>div {
     float: left;
     height: 203px;
@@ -439,64 +438,27 @@ h2:after{
     background-color: #2898ee;
 }
 
-.footer {
-    width: 96%;
-    height: 200;
-    background: rgb(151, 148, 148);
+footer{
+    background: rgb(255, 255, 255);
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    color: black;
 }
 
-.footer .grupo-1 {
-    width: 100%;
-    max-height: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 1px 0px;
-}
-
-.footer .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+.footer-content{
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.footer .grupo-1 .box figure img {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    right: 50px;
-    justify-items: right;
-
-}
-
-.footer .grupo-1 .box .redSocial img {
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-items: right;
     justify-content: center;
+    flex-direction: column;
+    text-align: center; 
 }
 
-.footer .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.footer .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-}
-
-.footer .grupo-2 {
-    background-color: rgb(168, 165, 165);
-    padding: 10px 40px;
+.footer-bottom{
+    background-color: rgb(245, 237, 242);
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
-    color: #fff;
 }
 
 @media (min-width:768px) {
