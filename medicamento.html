@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -135,75 +136,65 @@
                 <p>$ 62.500</p>
             </div>
             <div class="product" id="product_3">
-                <img src="/img/galgocol.png" width="195" height="100" />
-                <h5>Galgocol</h5>
-                <p>$ 3.000</p>
+                <img src="/img/enrofloxacina.png" width="195" height="100" />
+                <h5>Enrofloxacina Tabletas</h5>
+                <p>$ 42.000</p>
             </div>
             <div class="product" id="product_4">
-                <img src="/img/neurexan.png" width="195" height="100" />
-                <h5>Neurexan</h5>
-                <p>$ 63.500</p>
+                <img src="/img/elimsol.png" width="195" height="100" />
+                <h5>Elimsol</h5>
+                <p>$ 34.900</p>
             </div>
             <div class="product" id="product_5">
-                <img src="/img/kalsisoral.png" width="195" height="100" />
-                <h5>Kalsis Oral</h5>
-                <p>$ 79.000</p>
+                <img src="/img/asuntol.png" width="195" height="100" />
+                <h5>Asuntol</h5>
+                <p>$ 8.700</p>
             </div>
             <div class="product" id="product_5">
-                <img src="/img/suplementum.png" width="195" height="100" />
-                <h5>Supplementum</h5>
-                <p>$ 62.500</p>
+                <img src="/img/fooeyspray.png" width="195" height="100" />
+                <h5>Fooey Spray</h5>
+                <p>$ 20.000</p>
         </div>
     </div>
 
+    <script>
+        var current = 0;
+        var imagenes = new Array();
 
-
-
-                <script>
-                    var current = 0;
-                    var imagenes = new Array();
-
-                    $(document).ready(function () {
-                        var numImages = 6;
-                        if (numImages <= 3) {
-                            $('.right-arrow').css('display', 'none');
-                            $('.left-arrow').css('display', 'none');
-                        }
-
-                        $('.left-arrow').on('click', function () {
-                            if (current > 0) {
-                                current = current - 1;
-                            } else {
-                                current = numImages - 3;
-                            }
-
-                            $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
-
-                            return false;
-                        });
-
-                        $('.left-arrow').on('hover', function () {
-                            $(this).css('opacity', '0.5');
-                        }, function () {
-                            $(this).css('opacity', '1');
-                        });
-
-                        $('.right-arrow').on('hover', function () {
-                            $(this).css('opacity', '0.5');
-                        }, function () {
-                            $(this).css('opacity', '1');
-                        });
-
-                        $('.right-arrow').on('click', function () {
-                            if (numImages > current + 3) {
-                                current = current + 1;
-                            } else {
-                                current = 0;
-                            }
-
-                            $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
-
-                            return false;
-                        });
-                    });
-                </script>
+        $(document).ready(function () {
+            var numImages = 6;
+            if (numImages <= 3) {
+                $('.right-arrow').css('display', 'none');
+                $('.left-arrow').css('display', 'none');
+            }
+            $('.left-arrow').on('click', function () {
+                if (current > 0) {
+                    current = current - 1;
+                } else {
+                    current = numImages - 3;
+                }
+                $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
+                return false;
+            });
+            $('.left-arrow').on('hover', function () {
+                $(this).css('opacity', '0.5');
+            }, function () {
+                $(this).css('opacity', '1');
+            });
+            $('.right-arrow').on('hover', function () {
+                $(this).css('opacity', '0.5');
+            }, function () {
+                $(this).css('opacity', '1');
+            });
+            $('.right-arrow').on('click', function () {
+                if (numImages > current + 3) {
+                    current = current + 1;
+                } else {
+                    current = 0;
+                }
+                $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
+                return false;
+            });
+        });
+    </script>
+    
