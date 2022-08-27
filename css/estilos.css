@@ -19,6 +19,7 @@ body {
     
 }
 
+
 .menu{
     text-align: center;
     margin: 20px;
@@ -386,7 +387,7 @@ ul.slider li:target {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 100px; 
+    padding: 0px; 
 }
 
 .contenedorContactenos:after{
