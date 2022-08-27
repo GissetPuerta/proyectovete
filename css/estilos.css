@@ -19,6 +19,11 @@ body {
     
 }
 
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
 .imgcatdog{
     width: 100%;
     height: 100%;
@@ -29,10 +34,14 @@ body {
 
 }
 
+#flechaizde{
+    font-size: 50px;
+}
+
 i{
     display: flex;
-    font-size: 50px ;
-    color:rgb(255, 255, 255);
+    font-size:50px ;
+    color:rgb(28, 156, 179);
     padding: 30px 30px;
 }
 .carrousel{
@@ -68,7 +77,6 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .itemCarrouselArrows > i:hover {
@@ -91,13 +99,13 @@ i{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(150, 150, 150, 0.555);
+    background-color:rgb(255, 255, 255);
 }
 
 .conteCarrouselController > a{
     text-decoration: none;
     font-size: 2em;
-    color: grey;
+    color: rgb(247, 150, 222);
 }
 
 .itemCarrouselArrows > a > i{
@@ -164,10 +172,6 @@ ul.slider li:target {
     border-radius: 100%;
 }
 
-body {
-    font-family: 'DynaPuff', cursive;
-}
-
 .container {
     margin: 0 auto;
     width: 90%;
@@ -180,7 +184,6 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
-
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(5, 1fr);
