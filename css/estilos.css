@@ -375,42 +375,26 @@ ul.slider li:target {
 }
 
 #contenedorGenMedi{
-    position:center;
+    border-radius: 13px;
     width: 1000px;
-    height: 60px;
-    margin: 0px 300px;
-    background-color: #2898ee;
+    height: 2300px;
+    left: 400px;
+    margin: 0px 400px;
+    background:url("img/gato_gorro2.jpeg") no-repeat center;
+    background-size:cover;
+    z-index: -1;
 
 }
 
 #carrusel {
-    float:left;
+    left: 200px;
     width:600px;
-    overflow:hidden;
-    height:203px;
+    height:200px;
     position:center;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin: 0px 700px;
     
 }
 
-#carrusel .left-arrow {
-    position:absolute;
-    left:10px;
-    z-index:1;
-    top:50%;
-    margin-top:-9px;
-    color: #fa58ac;
-}
-
-#carrusel .right-arrow {
-    position:absolute;
-    right:10px;
-    z-index:1;
-    top:50%;
-    margin-top:-9px;
-    color: #fa58ac;
-}
 
 .carrusel {
     width:700px;
@@ -426,18 +410,24 @@ ul.slider li:target {
 
 .carrusel>div {
     float: left;
-    height: 200px;
+    height: 300px;
     margin-right: 5px;
     width: 195px;
     text-align:center;
+    background-color: white;
+    z-index: -1;
 }
 
 .carrusel img {
     cursor:pointer;
+    height: 150px;
+    width: 150px;
 }
 
 .product {
-    border:#CCCCCC 1px solid;
+    border: white 1px solid;
+    background-color: #fa58ac;
+    margin: 30px 30px;
 }
 
 .contenedorContactenos{
@@ -476,7 +466,7 @@ ul.slider li:target {
 
 .left{
     height: 100%;
-    background: url("img/perro_gafas.jpg") no-repeat center;
+    background: url("img/perro_gafas.jp") no-repeat center;
     background-size: cover;
 }
 
