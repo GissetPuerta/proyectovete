@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Contactenos</title>
+    <title>Medicamentos</title>
+
     <link rel="shortcut icon" href="img/logovete.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,9 +38,15 @@
                     <a href="contactenos.html" class="nav_link">Contáctenos</a>
                 </li>
             </ul>
+
             <a href="#nav" class="nav_hamburguer">
                 <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
             </a>
+
+            <a href="#nav" class="nav_hamburguer">
+                <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
+            </a>
+
             <a href="#" class="nav_close">
                 <img src="img/close_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
             </a>
@@ -45,6 +54,7 @@
     </header>
 
     <header>
+
         <div class="container" id="mediencabezado">
             <h1>UNA MASCOTA SANA ES UNA MASCOTA FELIZ</h1>
             <h3>RECUERDA QUE EL SUMISTRO DE MEDICAMENTOS A TU MASCOTA
@@ -150,6 +160,99 @@
     </script>
     <br>
 
+        <h1>UNA MASCOTA SANA ES UNA MASCOTA FELIZ</h1>
+        <h3>RECUERDA QUE EL SUMISTRO DE MEDICAMENTOS A TU MASCOTA
+            DEBE SER RECETADA, DE NO MOSTRAR MEJORAS LLEVARLA A TU
+            VETERINARIO DE CONFIANZA </h3>
+    </header>
+
+    <div class="container" id="contenedorGenMedi">
+        <div id="carrusel">
+            <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+            <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+            <div class="carrusel">
+                <div class="product" id="product_0">
+                    <img src="/img/adaptil.jpg" width="195" height="100" />
+                    <h5>adaptil</h5>
+                    <p>$ 82,000</p>
+                </div>
+                <div class="product" id="product_1">
+                    <img src="/img/advantage.jpg" width="195" height="100" />
+                    <h5>advantage</h5>
+                    <p>$ 38,700</p>
+                </div>
+                <div class="product" id="product_2">
+                    <img src="/img/bravecto.jpg" width="195" height="100" />
+                    <h5>bravecto</h5>
+                    <p>$ 90,000</p>
+                </div>
+                <div class="product" id="product_3">
+                    <img src="/img/doctral.jpg" width="195" height="100" />
+                    <h5>droctal</h5>
+                    <p>$ 30,000</p>
+                </div>
+                <div class="product" id="product_4">
+                    <img src="gallery/02.jpg" width="195" height="100" />
+                    <h5>Lorem ipsum 5</h5>
+                    <p>65.00 €</p>
+                </div>
+                <div class="product" id="product_5">
+                    <img src="gallery/03.jpg" width="195" height="100" />
+                    <h5>Lorem ipsum 6</h5>
+                    <p>40.00 €</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var current = 0;
+            var imagenes = new Array();
+
+            $(document).ready(function () {
+                var numImages = 6;
+                if (numImages <= 3) {
+                    $('.right-arrow').css('display', 'none');
+                    $('.left-arrow').css('display', 'none');
+                }
+
+                $('.left-arrow').on('click', function () {
+                    if (current > 0) {
+                        current = current - 1;
+                    } else {
+                        current = numImages - 3;
+                    }
+
+                    $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
+
+                    return false;
+                });
+
+                $('.left-arrow').on('hover', function () {
+                    $(this).css('opacity', '0.5');
+                }, function () {
+                    $(this).css('opacity', '1');
+                });
+
+                $('.right-arrow').on('hover', function () {
+                    $(this).css('opacity', '0.5');
+                }, function () {
+                    $(this).css('opacity', '1');
+                });
+
+                $('.right-arrow').on('click', function () {
+                    if (numImages > current + 3) {
+                        current = current + 1;
+                    } else {
+                        current = 0;
+                    }
+
+                    $(".carrusel").animate({ "left": -($('#product_' + current).position().left) }, 600);
+
+                    return false;
+                });
+            });
+        </script>
+    </div>
+
     <footer class="footer">
         <div class="grupo-1">
             <div class="box">
@@ -168,6 +271,14 @@
             </div>
             <div class="box">
                 <h2>Siguenos</h2>
+
+            <div class="box">
+                <p>Av. Guabinal #4386, Ibagué -
+                    Tolima. </p>
+                <p>302 415 6133 - 318 793 6286</p>
+            </div>
+            
+            <div class="box">
                 <div class="redSocial">
                     <img src="img/instagram.png" width="40px" height="40px" alt="InstagramS">
                     <img src="img/facebook.png" width="40px" height="40px" alt="Facebook">
@@ -181,6 +292,8 @@
                 Reservados.</small>
         </div>
     </footer>
+
+</body>
 
 </body>
 

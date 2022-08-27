@@ -1,29 +1,111 @@
-.itemcarrusel{
-    border: 1px solid black;
-    height: 200px;
-    position: relative;
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-.tarjetacarrusel{
-    background-color: aqua;
+.grid div{ 
+    background: rgba(255, 255, 255, 0.555);
+    padding: 1em;
+}
+.grid div:hover {
+    border: 1px solid #20b3b8;
+}
+.amigos{
+    max-width: 110%;
+    height: 500px;
+    
+}
+
+
+
+
+
+
+
+
+.imgcatdog{
+    width: 100%;
     height: 100%;
 }
-.flechascarrusel{
-    background-color: #365b77 0.3;
+
+.vetlog{
+    max-width: 25%;
+
+}
+
+i{
+    display: flex;
+    font-size: 50px ;
+    color:rgb(255, 255, 255);
+    padding: 30px 30px;
+}
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
     position: absolute;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    width: 100%;
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.conteitemscarrusel{
-    border: 5px solid black;
+
 }
 
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
 
+#itemCarrousel-1{
+    background-color: rgb(226, 50, 50);
+}
 
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+}
 
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(150, 150, 150, 0.555);
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
 
 body {
     font-family: 'DynaPuff', cursive;
@@ -438,12 +520,20 @@ h2:after{
 
 .footer .grupo-1 .box figure img {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
     right: 50px;
     justify-items: right;
 
+}
+
+.footer .grupo-1 .box .redSocial img {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-items: right;
+    justify-content: center;
 }
 
 .footer .grupo-1 .box h2 {
