@@ -319,9 +319,11 @@ ul.slider li:target {
     letter-spacing: 2px;
 }
 
-#ContenedorGenMed{
+#contenedorGenMedi{
     position:center;
-    color: #83c9ff;
+    width: 1000px;
+    height: 60px;
+
 }
 
 #carrusel {
@@ -332,34 +334,38 @@ ul.slider li:target {
     position:center;
     margin-top:20px;
     margin-bottom:20px;
+    
 }
- 
+
 #carrusel .left-arrow {
     position:absolute;
     left:10px;
     z-index:1;
     top:50%;
     margin-top:-9px;
+    color: #fa58ac;
 }
- 
+
 #carrusel .right-arrow {
     position:absolute;
     right:10px;
     z-index:1;
     top:50%;
     margin-top:-9px;
+    color: #fa58ac;
 }
- 
+
 .carrusel {
-    width:4000px;
+    width:2000px;
     left:0px;
     position:absolute;
     z-index:0;
+    position: center;
 }
- 
+
 .carrusel>div {
     float: left;
-    height: 203px;
+    height: 200px;
     margin-right: 5px;
     width: 195px;
     text-align:center;
