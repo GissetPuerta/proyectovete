@@ -16,15 +16,44 @@
 
 <body>
     <header>
-        <div class="container" id="mediencabezado" <center>
+        <nav class="nav container" id="nav">
+            <h1 class="nav_logo">Happines</h1>
+
+            <ul class="nav_links">
+                <li class="nav_item">
+                    <a href="index.html" class="nav_link">Inicio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="servicios.html" class="nav_link">Servicios</a>
+                </li>
+                <li class="nav_item">
+                    <a href="productos.html" class="nav_link">Productos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="medicamento.html" class="nav_link">Medicamentos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="contactenos.html" class="nav_link">Contáctenos</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav_hamburguer">
+                <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
+            </a>
+            <a href="#" class="nav_close">
+                <img src="img/close_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
+            </a>
+        </nav>
+    </header>
+
+    <header>
+        <div class="container" id="mediencabezado">
             <h1>UNA MASCOTA SANA ES UNA MASCOTA FELIZ</h1>
             <h3>RECUERDA QUE EL SUMISTRO DE MEDICAMENTOS A TU MASCOTA
                 DEBE SER RECETADA, DE NO MOSTRAR MEJORAS LLEVARLA A TU
                 VETERINARIO DE CONFIANZA </h3>
-            </center>
         </div>
-
     </header>
+
     <div class="container" id="contenedorGenMedi"></div>
     <div id="carrusel">
         <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
@@ -51,17 +80,27 @@
                 <p>$ 30,000</p>
             </div>
             <div class="product" id="product_4">
-                <img src="/img/descarga.jfif" width="195" height="100" />
+                <img src="/img/descarga.jpg" width="195" height="100" />
                 <h5>Nexgard 5</h5>
                 <p>$ 34.900</p>
             </div>
             <div class="product" id="product_5">
-                <img src="/img/bolfo.jfif" width="195" height="100" />
+                <img src="/img/bolfo.jpg" width="195" height="100" />
+                <h5>Bolfo Polvo</h5>
+                <p>$ 19.000</p>
+
+                <img src="/img/bolfo.jpg" width="195" height="100" />
                 <h5>Bolfo Polvo</h5>
                 <p>$ 19.000</p>
             </div>
+            <div class="product" id="product_5">
+                <img src="/img/nexgard.jpg" width="195" height="100" />
+                <h5>Nexgard</h5>
+                <p>$ 34.900</p>
+            </div>
         </div>
     </div>
+
     <script>
         var current = 0;
         var imagenes = new Array();
@@ -110,44 +149,7 @@
             });
         });
     </script>
-    </div>
-
-</body>
-<link rel="stylesheet" type="text/css" href="tu_dominio_web/css_root/flaticon.css">
-</head>
-
-<body>
-    <header>
-        <nav class="nav container" id="nav">
-            <h1 class="nav_logo">Happines</h1>
-
-            <ul class="nav_links">
-                <li class="nav_item">
-                    <a href="index.html" class="nav_link">Inicio</a>
-                </li>
-                <li class="nav_item">
-                    <a href="servicios.html" class="nav_link">Servicios</a>
-                </li>
-                <li class="nav_item">
-                    <a href="productos.html" class="nav_link">Productos</a>
-                </li>
-                <li class="nav_item">
-                    <a href="medicamento.html" class="nav_link">Medicamentos</a>
-                </li>
-                <li class="nav_item">
-                    <a href="contactenos.html" class="nav_link">Contáctenos</a>
-                </li>
-            </ul>
-
-            <a href="#nav" class="nav_hamburguer">
-                <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
-            </a>
-
-            <a href="#" class="nav_close">
-                <img src="img/close_FILL0_wght400_GRAD0_opsz48.svg" class="nav_icon">
-            </a>
-        </nav>
-    </header>
+    <br>
 
     <footer class="footer">
         <div class="grupo-1">
@@ -180,7 +182,6 @@
                 Reservados.</small>
         </div>
     </footer>
-
 
 </body>
 
