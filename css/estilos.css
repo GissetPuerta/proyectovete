@@ -1,3 +1,7 @@
+body {
+    font-family: 'DynaPuff', cursive;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -16,6 +20,11 @@
 }
 
 
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
 .imgcatdog{
     width: 100%;
     height: 100%;
@@ -26,10 +35,14 @@
 
 }
 
+#flechaizde{
+    font-size: 50px;
+}
+
 i{
     display: flex;
-    font-size: 50px ;
-    color:rgb(255, 255, 255);
+    font-size:50px ;
+    color:rgb(28, 156, 179);
     padding: 30px 30px;
 }
 .carrousel{
@@ -65,7 +78,6 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .itemCarrouselArrows > i:hover {
@@ -88,21 +100,17 @@ i{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(150, 150, 150, 0.555);
+    background-color:rgb(255, 255, 255);
 }
 
 .conteCarrouselController > a{
     text-decoration: none;
     font-size: 2em;
-    color: grey;
+    color: rgb(247, 150, 222);
 }
 
 .itemCarrouselArrows > a > i{
     color: white;
-}
-
-body {
-    font-family: 'DynaPuff', cursive;
 }
 
 ul,
@@ -165,8 +173,58 @@ ul.slider li:target {
     border-radius: 100%;
 }
 
-body {
-    font-family: 'DynaPuff', cursive;
+.contenedorProductos:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:url("img/perro_gafas.jpg") no-repeat center;
+    background-size:cover;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.container2 {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.container3 {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(164, 218, 254);
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+    cursor: default;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.4);
+    transform: translateY(-3%);
+}
+.card img {
+    width: 100%;
+    height: 210px;
+}
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
 }
 
 .container {
@@ -181,7 +239,6 @@ body {
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
-
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(5, 1fr);
@@ -202,10 +259,9 @@ body {
     border-radius: 20px;
 }
 
-.containerServicio>.header,
-.containerServicio>.footer {
+.containerServicio>.header{
     grid-column: 1/6;
-    background: rgb(151, 148, 148);
+    background: #f86fb6;
     border-color: none;
 }
 
@@ -217,7 +273,7 @@ body {
 
 .contenidoServicio>.articleServicios {
     border-radius: 20px;
-    background: #2898ee;
+    background: #44a1e7;
     grid-column: span 4;
     padding: 20px;
     margin-top: 20px;
@@ -231,7 +287,7 @@ body {
 
 .containerServicio>.sidebarServicio {
     grid-column: span 2;
-    background: #fa58ac;
+    background: #a8a2a5;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -391,7 +447,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 100px; 
+    padding: 0px; 
 }
 
 .contenedorContactenos:after{
@@ -486,64 +542,27 @@ h2:after{
     background-color: #2898ee;
 }
 
-.footer {
-    width: 96%;
-    height: 200;
-    background: rgb(151, 148, 148);
+footer{
+    background: rgb(255, 255, 255);
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    color: black;
 }
 
-.footer .grupo-1 {
-    width: 100%;
-    max-height: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 1px 0px;
-}
-
-.footer .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+.footer-content{
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.footer .grupo-1 .box figure img {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    right: 50px;
-    justify-items: right;
-
-}
-
-.footer .grupo-1 .box .redSocial img {
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-items: right;
     justify-content: center;
+    flex-direction: column;
+    text-align: center; 
 }
 
-.footer .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.footer .grupo-1 .box p {
-    color: #efefef;
-    margin-bottom: 10px;
-}
-
-.footer .grupo-2 {
-    background-color: rgb(168, 165, 165);
-    padding: 10px 40px;
+.footer-bottom{
+    background-color: rgb(245, 237, 242);
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
-    color: #fff;
 }
 
 @media (min-width:768px) {
