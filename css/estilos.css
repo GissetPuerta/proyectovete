@@ -199,6 +199,20 @@ ul.slider li:target {
     filter: blur(20px);
 }
 
+.containerMedica:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2300px;
+    background:url("img/gato_gorro2.jpeg") no-repeat center;
+    background-size:cover;
+    z-index: -1;
+    filter: blur(20px);
+    border-radius: 13px;
+}
+
 .container1 {
     margin: 0px 150px;
     width: 100%;
@@ -223,14 +237,22 @@ ul.slider li:target {
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
-    background: rgb(164, 218, 255);
+    background: rgb(145, 217, 226);
     box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
     cursor: default;
 }
-.card:hover{
-    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.4);
-    transform: translateY(-3%);
+
+.cardMedi{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgb(7, 192, 224);
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+    cursor: default;
 }
+
+
 .card img {
     width: 100%;
     height: 210px;
@@ -242,13 +264,6 @@ ul.slider li:target {
 .card .contenido p{
     line-height: 1.5;
     color: #6a6a6a;
-}
-
-.container {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1200px;
-    overflow: hidden;
 }
 
 .containerServicio {
@@ -390,17 +405,6 @@ ul.slider li:target {
     letter-spacing: 2px;
 }
 
-#contenedorGenMedi{
-    border-radius: 13px;
-    width: 1000px;
-    height: 2300px;
-    left: 400px;
-    margin: 0px 400px;
-    background:url("img/gato_gorro2.jpeg") no-repeat center;
-    background-size:cover;
-    z-index: -1;
-
-}
 
 #carrusel {
     left: 200px;
@@ -482,7 +486,7 @@ ul.slider li:target {
 
 .left{
     height: 100%;
-    background: url("img/perro_gafas.jp") no-repeat center;
+    background: url("./img/perro_gafas.jpg") no-repeat center;
     background-size: cover;
 }
 
