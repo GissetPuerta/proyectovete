@@ -19,7 +19,6 @@ body {
     
 }
 
-
 .menu{
     text-align: center;
     margin: 20px;
@@ -47,6 +46,7 @@ i{
 }
 .carrousel{
     width: 100%;
+    overflow: hidden;
 }
 
 .conteCarrousel{
@@ -242,17 +242,6 @@ ul.slider li:target {
     cursor: default;
 }
 
-.cardMedi{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: rgb(7, 192, 224);
-    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
-    cursor: default;
-}
-
-
 .card img {
     width: 100%;
     height: 210px;
@@ -264,6 +253,42 @@ ul.slider li:target {
 .card .contenido p{
     line-height: 1.5;
     color: #6a6a6a;
+}
+.card:hover{
+    background-color: #e5a0c3;
+    transition: .9s;
+}
+
+.cardMedi{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #e5a0c3;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.cardMedi img {
+    width: 100%;
+    height: 210px;
+    background-image: rgb(0, 0, 0, 0);
+}
+.cardMedi .contenido {
+    padding: 15px;
+    text-align: center;
+}
+.cardMedi .contenido p{
+    line-height: 1.5;
+    color: #2e2e2e;
+}
+.cardMedi .contenido h3{
+    color: #646464;
+}
+
+.cardMedi:hover{
+    background-color:rgb(145, 217, 226);
+    transition: .9s;
 }
 
 .containerServicio {
@@ -455,6 +480,7 @@ ul.slider li:target {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     padding: 0px; 
@@ -465,6 +491,7 @@ ul.slider li:target {
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     background:url("img/perro_gafas.jpg") no-repeat center;
@@ -478,6 +505,7 @@ ul.slider li:target {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     text-align: center;
     background-color: #fff;
@@ -488,10 +516,13 @@ ul.slider li:target {
     height: 100%;
     background: url("./img/perro_gafas.jpg") no-repeat center;
     background-size: cover;
+    overflow: hidden;
+
 }
 
 .right{
     padding: 25px 80px;
+    overflow: hidden;
 }
 
 h2{
@@ -628,19 +659,6 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .footer .grupo-1 {
-        width: 85%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 30px 0px;
-    }
-
-    .footer .grupo-1 .box figure img {
-        width: 200px;
-        height: 200px;
-        border-radius: 20px;
-    }
-
     .slider-container {
         display: flex;
         width: 60%;
