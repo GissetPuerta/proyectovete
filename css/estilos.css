@@ -606,6 +606,8 @@ footer{
     text-align: center;
 }
 
+/* Media query */
+
 @media (min-width:768px) {
     .nav {
         --state-hamburguer: scale(0);
@@ -659,12 +661,19 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .slider-container {
-        display: flex;
-        width: 60%;
-        height: 70vh;
-        overflow-x: scroll scroll-snap-typex mandatory;
-    }
+.slider-container {
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll scroll-snap-typex mandatory;
+    display: block;
+}
+
+.amigos {
+    display: block  ;
+}
+
 
     .slider-container img {
         flex: 0 0 90%;
